@@ -2,13 +2,13 @@ package word
 
 type Lemma struct {
 	ID          int    `json:"id"`
-	Word        string `json:"word"`
+	Word        int    `json:"word"`
 	Definitions string `json:"definitions"`
 }
 
 type PartOfSpeech struct {
 	ID           int     `json:"id"`
-	PartOfSpeech string  `json:"part_of_speech"`
+	PartOfSpeech int     `json:"part_of_speech"`
 	Lemmas       []Lemma `json:"lemmas"`
 }
 
